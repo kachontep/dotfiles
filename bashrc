@@ -111,3 +111,7 @@ export EDITOR='vim'
 
 # Default shell
 export SHELL=`which bash`
+
+# Disable Ctrl + S to send XOFF
+stty ixany
+stty ixoff -ixon
