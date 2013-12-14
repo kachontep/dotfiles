@@ -23,6 +23,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " My bundles here:
+Bundle "vim-scripts/Emmet.vim"
 Bundle "kien/ctrlp.vim"
 
 " Bundle related configurations
