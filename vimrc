@@ -18,6 +18,17 @@ set expandtab			          " use spaces instead of tabs
 set smarttab			          " use tabs as the start of a line, spaces elsewhere
 set nowrap			            " don't wrap text
 
+" Custom key mappings
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
+
+nmap <C-N>f :NERDTreeFind<CR>
+nmap <C-N><space> :NERDTreeToggle<CR>
+nmap <C-N> :NERDTree
+nmap <C-N>c :NERDTreeClose<CR>
+
 " Vundle Plugin
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -25,6 +36,12 @@ call vundle#rc()
 " My bundles here:
 Bundle "vim-scripts/Emmet.vim"
 Bundle "kien/ctrlp.vim"
+Bundle "scrooloose/nerdtree"
+Bundle "scrooloose/syntastic"
+Bundle "Lokaltog/vim-easymotion"
 
 " Bundle related configurations
 let g:ctrlp_map = '<C-p>'
+
+" NERDTree related configurations
+let g:NERDTreeDirArrows=0
